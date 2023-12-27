@@ -25,6 +25,11 @@
 		EF8068882B3BE83300F242DC /* CustomActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068872B3BE83300F242DC /* CustomActionSheet.swift */; };
 		EF80688E2B3BE85D00F242DC /* DialogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80688D2B3BE85D00F242DC /* DialogsView.swift */; };
 		EF8068902B3BEF6700F242DC /* CustomAlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80688F2B3BEF6700F242DC /* CustomAlertDialog.swift */; };
+		EF8068942B3BF23700F242DC /* ApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068932B3BF23700F242DC /* ApiView.swift */; };
+		EF80689B2B3BF35500F242DC /* CoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80689A2B3BF35500F242DC /* CoinController.swift */; };
+		EF80689D2B3BF3B100F242DC /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80689C2B3BF3B100F242DC /* CoinListView.swift */; };
+		EF80689F2B3BFA1C00F242DC /* CoinServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80689E2B3BFA1C00F242DC /* CoinServices.swift */; };
+		EF8068A12B3BFA7B00F242DC /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068A02B3BFA7B00F242DC /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,11 @@
 		EF8068872B3BE83300F242DC /* CustomActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionSheet.swift; sourceTree = "<group>"; };
 		EF80688D2B3BE85D00F242DC /* DialogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsView.swift; sourceTree = "<group>"; };
 		EF80688F2B3BEF6700F242DC /* CustomAlertDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertDialog.swift; sourceTree = "<group>"; };
+		EF8068932B3BF23700F242DC /* ApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiView.swift; sourceTree = "<group>"; };
+		EF80689A2B3BF35500F242DC /* CoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinController.swift; sourceTree = "<group>"; };
+		EF80689C2B3BF3B100F242DC /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
+		EF80689E2B3BFA1C00F242DC /* CoinServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinServices.swift; sourceTree = "<group>"; };
+		EF8068A02B3BFA7B00F242DC /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +144,7 @@
 		EF8068652B3BC2C000F242DC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EF8068912B3BF22100F242DC /* ApiView */,
 				EF8068712B3BCD5C00F242DC /* Components */,
 				EF8068662B3BC2CA00F242DC /* NavigationExplorer */,
 			);
@@ -237,6 +248,50 @@
 			path = Dialogs;
 			sourceTree = "<group>";
 		};
+		EF8068912B3BF22100F242DC /* ApiView */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068972B3BF30E00F242DC /* Services */,
+				EF8068962B3BF30800F242DC /* Controllers */,
+				EF8068952B3BF30200F242DC /* Models */,
+				EF8068922B3BF22900F242DC /* Views */,
+			);
+			path = ApiView;
+			sourceTree = "<group>";
+		};
+		EF8068922B3BF22900F242DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068932B3BF23700F242DC /* ApiView.swift */,
+				EF80689C2B3BF3B100F242DC /* CoinListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF8068952B3BF30200F242DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068A02B3BFA7B00F242DC /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF8068962B3BF30800F242DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF80689A2B3BF35500F242DC /* CoinController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF8068972B3BF30E00F242DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF80689E2B3BFA1C00F242DC /* CoinServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,17 +362,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF80689D2B3BF3B100F242DC /* CoinListView.swift in Sources */,
 				EF80686B2B3BC2F200F242DC /* NavigationHome.swift in Sources */,
 				EF8068822B3BD54B00F242DC /* BaseSheetView.swift in Sources */,
 				EF8068542B3BC27100F242DC /* ContentView.swift in Sources */,
 				EF8068802B3BD4DD00F242DC /* SheetsView.swift in Sources */,
 				EF8068842B3BD95E00F242DC /* FullScreenSheetView.swift in Sources */,
+				EF80689F2B3BFA1C00F242DC /* CoinServices.swift in Sources */,
 				EF8068772B3BCEF200F242DC /* PopoverView.swift in Sources */,
+				EF8068942B3BF23700F242DC /* ApiView.swift in Sources */,
 				EF80687A2B3BCF8100F242DC /* PopToRootButton.swift in Sources */,
 				EF80687C2B3BD36B00F242DC /* PopUpMenuView.swift in Sources */,
 				EF80686D2B3BC37600F242DC /* NavigationController.swift in Sources */,
 				EF80688E2B3BE85D00F242DC /* DialogsView.swift in Sources */,
+				EF8068A12B3BFA7B00F242DC /* CoinModel.swift in Sources */,
 				EF8068702B3BC4EB00F242DC /* RouteManager.swift in Sources */,
+				EF80689B2B3BF35500F242DC /* CoinController.swift in Sources */,
 				EF8068902B3BEF6700F242DC /* CustomAlertDialog.swift in Sources */,
 				EF8068752B3BCD7A00F242DC /* ComponentsView.swift in Sources */,
 				EF8068882B3BE83300F242DC /* CustomActionSheet.swift in Sources */,

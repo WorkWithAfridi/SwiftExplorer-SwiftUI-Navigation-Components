@@ -19,6 +19,8 @@ enum Route{
     case dialogView
     case customActionSheet
     case customAlertDialog
+    case apiView
+    case coinList
     case invalidRoute
 }
 
@@ -46,6 +48,10 @@ struct GetView: View {
             CustomActionSheet()
         case .customAlertDialog:
             CustomAlertDialog()
+        case .apiView:
+            ApiView()
+        case .coinList:
+            CoinListView()
         default:
             ContentUnavailableView("404", systemImage: "globe", description: Text("Invalid route! :(").font(.footnote))
         }

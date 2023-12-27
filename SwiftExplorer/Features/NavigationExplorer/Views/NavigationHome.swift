@@ -16,6 +16,10 @@ struct NavigationHome: View {
                     .onTapGesture {
                         navigationController.path.append(Route.components)
                     }
+                Text("API-View")
+                    .onTapGesture {
+                        navigationController.path.append(Route.apiView)
+                    }
                 Text("Invalid Route")
                     .onTapGesture {
                         navigationController.path.append(Route.invalidRoute)
