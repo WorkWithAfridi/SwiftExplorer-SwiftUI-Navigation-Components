@@ -12,6 +12,13 @@
 		EF8068562B3BC27100F242DC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068552B3BC27100F242DC /* Item.swift */; };
 		EF8068582B3BC27200F242DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8068572B3BC27200F242DC /* Assets.xcassets */; };
 		EF80685B2B3BC27200F242DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF80685A2B3BC27200F242DC /* Preview Assets.xcassets */; };
+		EF80686B2B3BC2F200F242DC /* NavigationHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80686A2B3BC2F200F242DC /* NavigationHome.swift */; };
+		EF80686D2B3BC37600F242DC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80686C2B3BC37600F242DC /* NavigationController.swift */; };
+		EF8068702B3BC4EB00F242DC /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80686F2B3BC4EB00F242DC /* RouteManager.swift */; };
+		EF8068752B3BCD7A00F242DC /* ComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068742B3BCD7A00F242DC /* ComponentsView.swift */; };
+		EF8068772B3BCEF200F242DC /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068762B3BCEF200F242DC /* PopoverView.swift */; };
+		EF80687A2B3BCF8100F242DC /* PopToRootButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068792B3BCF8100F242DC /* PopToRootButton.swift */; };
+		EF80687C2B3BD36B00F242DC /* PopUpMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,13 @@
 		EF8068552B3BC27100F242DC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EF8068572B3BC27200F242DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF80685A2B3BC27200F242DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF80686A2B3BC2F200F242DC /* NavigationHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHome.swift; sourceTree = "<group>"; };
+		EF80686C2B3BC37600F242DC /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		EF80686F2B3BC4EB00F242DC /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		EF8068742B3BCD7A00F242DC /* ComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsView.swift; sourceTree = "<group>"; };
+		EF8068762B3BCEF200F242DC /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		EF8068792B3BCF8100F242DC /* PopToRootButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootButton.swift; sourceTree = "<group>"; };
+		EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +67,8 @@
 		EF8068502B3BC27100F242DC /* SwiftExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				EF8068512B3BC27100F242DC /* SwiftExplorerApp.swift */,
-				EF8068532B3BC27100F242DC /* ContentView.swift */,
-				EF8068552B3BC27100F242DC /* Item.swift */,
-				EF8068572B3BC27200F242DC /* Assets.xcassets */,
+				EF8068652B3BC2C000F242DC /* Features */,
+				EF8068612B3BC29100F242DC /* Core */,
 				EF8068592B3BC27200F242DC /* Preview Content */,
 			);
 			path = SwiftExplorer;
@@ -68,6 +80,119 @@
 				EF80685A2B3BC27200F242DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF8068612B3BC29100F242DC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068782B3BCF7300F242DC /* Views */,
+				EF80686E2B3BC4E000F242DC /* Services */,
+				EF8068642B3BC2B700F242DC /* Assets */,
+				EF8068632B3BC2A900F242DC /* Models */,
+				EF8068622B3BC29B00F242DC /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EF8068622B3BC29B00F242DC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068512B3BC27100F242DC /* SwiftExplorerApp.swift */,
+				EF8068532B3BC27100F242DC /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		EF8068632B3BC2A900F242DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068552B3BC27100F242DC /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF8068642B3BC2B700F242DC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068572B3BC27200F242DC /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EF8068652B3BC2C000F242DC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068712B3BCD5C00F242DC /* Components */,
+				EF8068662B3BC2CA00F242DC /* NavigationExplorer */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EF8068662B3BC2CA00F242DC /* NavigationExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068682B3BC2D800F242DC /* Controllers */,
+				EF8068672B3BC2D400F242DC /* Views */,
+			);
+			path = NavigationExplorer;
+			sourceTree = "<group>";
+		};
+		EF8068672B3BC2D400F242DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF80686A2B3BC2F200F242DC /* NavigationHome.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF8068682B3BC2D800F242DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF80686C2B3BC37600F242DC /* NavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF80686E2B3BC4E000F242DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF80686F2B3BC4EB00F242DC /* RouteManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EF8068712B3BCD5C00F242DC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068732B3BCD6800F242DC /* Controllers */,
+				EF8068722B3BCD6400F242DC /* Views */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EF8068722B3BCD6400F242DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068742B3BCD7A00F242DC /* ComponentsView.swift */,
+				EF8068762B3BCEF200F242DC /* PopoverView.swift */,
+				EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF8068732B3BCD6800F242DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF8068782B3BCF7300F242DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068792B3BCF8100F242DC /* PopToRootButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF80686B2B3BC2F200F242DC /* NavigationHome.swift in Sources */,
 				EF8068542B3BC27100F242DC /* ContentView.swift in Sources */,
+				EF8068772B3BCEF200F242DC /* PopoverView.swift in Sources */,
+				EF80687A2B3BCF8100F242DC /* PopToRootButton.swift in Sources */,
+				EF80687C2B3BD36B00F242DC /* PopUpMenuView.swift in Sources */,
+				EF80686D2B3BC37600F242DC /* NavigationController.swift in Sources */,
+				EF8068702B3BC4EB00F242DC /* RouteManager.swift in Sources */,
+				EF8068752B3BCD7A00F242DC /* ComponentsView.swift in Sources */,
 				EF8068562B3BC27100F242DC /* Item.swift in Sources */,
 				EF8068522B3BC27100F242DC /* SwiftExplorerApp.swift in Sources */,
 			);
