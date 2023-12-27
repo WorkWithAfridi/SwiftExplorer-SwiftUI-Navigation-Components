@@ -15,7 +15,10 @@ struct NavigationHome: View {
                 .onTapGesture {
                     navigationController.path.append(Route.components)
                 }
-            Text("Page 2")
+            Text("Invalid Route")
+                .onTapGesture {
+                    navigationController.path.append(Route.invalidRoute)
+                }
             Text("Page 3")
             Text("Page 4")
             Text("Page 5")

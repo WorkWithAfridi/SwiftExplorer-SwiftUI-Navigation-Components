@@ -19,6 +19,9 @@
 		EF8068772B3BCEF200F242DC /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068762B3BCEF200F242DC /* PopoverView.swift */; };
 		EF80687A2B3BCF8100F242DC /* PopToRootButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068792B3BCF8100F242DC /* PopToRootButton.swift */; };
 		EF80687C2B3BD36B00F242DC /* PopUpMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */; };
+		EF8068802B3BD4DD00F242DC /* SheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80687F2B3BD4DD00F242DC /* SheetsView.swift */; };
+		EF8068822B3BD54B00F242DC /* BaseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068812B3BD54B00F242DC /* BaseSheetView.swift */; };
+		EF8068842B3BD95E00F242DC /* FullScreenSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068832B3BD95E00F242DC /* FullScreenSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		EF8068762B3BCEF200F242DC /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		EF8068792B3BCF8100F242DC /* PopToRootButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopToRootButton.swift; sourceTree = "<group>"; };
 		EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpMenuView.swift; sourceTree = "<group>"; };
+		EF80687F2B3BD4DD00F242DC /* SheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsView.swift; sourceTree = "<group>"; };
+		EF8068812B3BD54B00F242DC /* BaseSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSheetView.swift; sourceTree = "<group>"; };
+		EF8068832B3BD95E00F242DC /* FullScreenSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 		EF8068722B3BCD6400F242DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF80687D2B3BD4B700F242DC /* Sheets */,
 				EF8068742B3BCD7A00F242DC /* ComponentsView.swift */,
 				EF8068762B3BCEF200F242DC /* PopoverView.swift */,
 				EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */,
@@ -193,6 +200,16 @@
 				EF8068792B3BCF8100F242DC /* PopToRootButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EF80687D2B3BD4B700F242DC /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				EF80687F2B3BD4DD00F242DC /* SheetsView.swift */,
+				EF8068812B3BD54B00F242DC /* BaseSheetView.swift */,
+				EF8068832B3BD95E00F242DC /* FullScreenSheetView.swift */,
+			);
+			path = Sheets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF80686B2B3BC2F200F242DC /* NavigationHome.swift in Sources */,
+				EF8068822B3BD54B00F242DC /* BaseSheetView.swift in Sources */,
 				EF8068542B3BC27100F242DC /* ContentView.swift in Sources */,
+				EF8068802B3BD4DD00F242DC /* SheetsView.swift in Sources */,
+				EF8068842B3BD95E00F242DC /* FullScreenSheetView.swift in Sources */,
 				EF8068772B3BCEF200F242DC /* PopoverView.swift in Sources */,
 				EF80687A2B3BCF8100F242DC /* PopToRootButton.swift in Sources */,
 				EF80687C2B3BD36B00F242DC /* PopUpMenuView.swift in Sources */,

@@ -13,6 +13,10 @@ enum Route{
     case components
     case popover
     case popUpMenu
+    case sheetsView
+    case baseSheet
+    case fullScreenSheet
+    case invalidRoute
 }
 
 struct GetView: View {
@@ -27,6 +31,12 @@ struct GetView: View {
             PopoverView()
         case .popUpMenu:
             PopUpMenuView()
+        case .sheetsView:
+            SheetsView()
+        case .baseSheet:
+            BaseSheetView()
+        case .fullScreenSheet:
+            FullScreenSheetView()
         default:
             ContentUnavailableView("404", systemImage: "globe", description: Text("Invalid route! :(").font(.footnote))
         }

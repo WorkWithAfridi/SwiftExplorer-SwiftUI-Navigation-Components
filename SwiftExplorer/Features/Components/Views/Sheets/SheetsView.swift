@@ -1,5 +1,5 @@
 //
-//  ComponentsView.swift
+//  SwiftUIView.swift
 //  SwiftExplorer
 //
 //  Created by Khondakar Afridi on 27/12/23.
@@ -7,24 +7,19 @@
 
 import SwiftUI
 
-struct ComponentsView: View {
+struct SheetsView: View {
     @EnvironmentObject var navigationController : NavigationController
     var body: some View {
         VStack{
             List{
-                Text("Pop Over")
+                Text("Base Sheet")
                     .onTapGesture {
-                        navigationController.to(route: .popover)
+                        navigationController.to(route: .baseSheet)
                     }
-                Text("Pop up Menu")
+                Text("Full Screen Sheets")
                     .onTapGesture {
-                        navigationController.to(route: .popUpMenu)
+                        navigationController.to(route: .fullScreenSheet)
                     }
-                Text("Sheets View")
-                    .onTapGesture {
-                        navigationController.to(route: .sheetsView)
-                    }
-
             }
             Button(action: {
                 navigationController.popToRoot()
@@ -32,10 +27,10 @@ struct ComponentsView: View {
                 Text("Pop to Root")
             })
         }
-        .navigationTitle(Text("Components View"))
+        .navigationTitle(Text("Sheets"))
     }
 }
 
 #Preview {
-    ComponentsView()
+    SheetsView()
 }
