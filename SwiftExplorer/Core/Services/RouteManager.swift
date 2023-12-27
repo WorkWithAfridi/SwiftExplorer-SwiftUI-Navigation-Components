@@ -16,6 +16,9 @@ enum Route{
     case sheetsView
     case baseSheet
     case fullScreenSheet
+    case dialogView
+    case customActionSheet
+    case customAlertDialog
     case invalidRoute
 }
 
@@ -37,6 +40,12 @@ struct GetView: View {
             BaseSheetView()
         case .fullScreenSheet:
             FullScreenSheetView()
+        case .dialogView:
+            DialogsView()
+        case .customActionSheet:
+            CustomActionSheet()
+        case .customAlertDialog:
+            CustomAlertDialog()
         default:
             ContentUnavailableView("404", systemImage: "globe", description: Text("Invalid route! :(").font(.footnote))
         }

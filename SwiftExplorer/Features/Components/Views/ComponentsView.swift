@@ -24,7 +24,10 @@ struct ComponentsView: View {
                     .onTapGesture {
                         navigationController.to(route: .sheetsView)
                     }
-
+                Text("Dialog")
+                    .onTapGesture {
+                        navigationController.to(route: .dialogView)
+                    }
             }
             Button(action: {
                 navigationController.popToRoot()

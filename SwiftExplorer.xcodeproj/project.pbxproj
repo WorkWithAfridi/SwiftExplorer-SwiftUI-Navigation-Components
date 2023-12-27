@@ -22,6 +22,9 @@
 		EF8068802B3BD4DD00F242DC /* SheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80687F2B3BD4DD00F242DC /* SheetsView.swift */; };
 		EF8068822B3BD54B00F242DC /* BaseSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068812B3BD54B00F242DC /* BaseSheetView.swift */; };
 		EF8068842B3BD95E00F242DC /* FullScreenSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068832B3BD95E00F242DC /* FullScreenSheetView.swift */; };
+		EF8068882B3BE83300F242DC /* CustomActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068872B3BE83300F242DC /* CustomActionSheet.swift */; };
+		EF80688E2B3BE85D00F242DC /* DialogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80688D2B3BE85D00F242DC /* DialogsView.swift */; };
+		EF8068902B3BEF6700F242DC /* CustomAlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80688F2B3BEF6700F242DC /* CustomAlertDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		EF80687F2B3BD4DD00F242DC /* SheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsView.swift; sourceTree = "<group>"; };
 		EF8068812B3BD54B00F242DC /* BaseSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSheetView.swift; sourceTree = "<group>"; };
 		EF8068832B3BD95E00F242DC /* FullScreenSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenSheetView.swift; sourceTree = "<group>"; };
+		EF8068872B3BE83300F242DC /* CustomActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionSheet.swift; sourceTree = "<group>"; };
+		EF80688D2B3BE85D00F242DC /* DialogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsView.swift; sourceTree = "<group>"; };
+		EF80688F2B3BEF6700F242DC /* CustomAlertDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,10 +185,10 @@
 		EF8068722B3BCD6400F242DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF8068862B3BE82400F242DC /* Dialogs */,
+				EF8068852B3BDE5100F242DC /* Popover */,
 				EF80687D2B3BD4B700F242DC /* Sheets */,
 				EF8068742B3BCD7A00F242DC /* ComponentsView.swift */,
-				EF8068762B3BCEF200F242DC /* PopoverView.swift */,
-				EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +216,25 @@
 				EF8068832B3BD95E00F242DC /* FullScreenSheetView.swift */,
 			);
 			path = Sheets;
+			sourceTree = "<group>";
+		};
+		EF8068852B3BDE5100F242DC /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068762B3BCEF200F242DC /* PopoverView.swift */,
+				EF80687B2B3BD36B00F242DC /* PopUpMenuView.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
+		EF8068862B3BE82400F242DC /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				EF8068872B3BE83300F242DC /* CustomActionSheet.swift */,
+				EF80688D2B3BE85D00F242DC /* DialogsView.swift */,
+				EF80688F2B3BEF6700F242DC /* CustomAlertDialog.swift */,
+			);
+			path = Dialogs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +316,11 @@
 				EF80687A2B3BCF8100F242DC /* PopToRootButton.swift in Sources */,
 				EF80687C2B3BD36B00F242DC /* PopUpMenuView.swift in Sources */,
 				EF80686D2B3BC37600F242DC /* NavigationController.swift in Sources */,
+				EF80688E2B3BE85D00F242DC /* DialogsView.swift in Sources */,
 				EF8068702B3BC4EB00F242DC /* RouteManager.swift in Sources */,
+				EF8068902B3BEF6700F242DC /* CustomAlertDialog.swift in Sources */,
 				EF8068752B3BCD7A00F242DC /* ComponentsView.swift in Sources */,
+				EF8068882B3BE83300F242DC /* CustomActionSheet.swift in Sources */,
 				EF8068562B3BC27100F242DC /* Item.swift in Sources */,
 				EF8068522B3BC27100F242DC /* SwiftExplorerApp.swift in Sources */,
 			);
