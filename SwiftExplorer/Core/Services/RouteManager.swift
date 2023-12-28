@@ -24,6 +24,7 @@ enum Route{
     case invalidRoute
     case pickerView
     case photoPicker
+    case cameraPhotoPicker
     case videoPicker
     case filePicker
 }
@@ -60,6 +61,8 @@ struct GetView: View {
             PickerView()
         case .photoPicker:
             PhotoSelectorView()
+        case .cameraPhotoPicker:
+            CameraPhotoPickerView()
         default:
             ContentUnavailableView("404", systemImage: "globe", description: Text("Invalid route! :(").font(.footnote))
         }

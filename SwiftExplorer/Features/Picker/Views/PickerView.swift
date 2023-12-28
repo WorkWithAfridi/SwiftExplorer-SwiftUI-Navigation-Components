@@ -12,9 +12,13 @@ struct PickerView: View {
     var body: some View {
         VStack{
             List{
-                Text("PhotoPicker")
+                Text("Photo Picker")
                     .onTapGesture {
                         navigationController.to(route: .photoPicker)
+                    }
+                Text("Camera Photo Picker")
+                    .onTapGesture {
+                        navigationController.to(route: .cameraPhotoPicker)
                     }
             }
             Button(action: {
