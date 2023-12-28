@@ -22,6 +22,10 @@ enum Route{
     case apiView
     case coinList
     case invalidRoute
+    case pickerView
+    case photoPicker
+    case videoPicker
+    case filePicker
 }
 
 struct GetView: View {
@@ -52,6 +56,10 @@ struct GetView: View {
             ApiView()
         case .coinList:
             CoinListView()
+        case .pickerView:
+            PickerView()
+        case .photoPicker:
+            PhotoSelectorView()
         default:
             ContentUnavailableView("404", systemImage: "globe", description: Text("Invalid route! :(").font(.footnote))
         }
