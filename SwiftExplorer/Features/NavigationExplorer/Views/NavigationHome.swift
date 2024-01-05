@@ -20,6 +20,10 @@ struct NavigationHome: View {
                     .onTapGesture {
                         navigationController.path.append(Route.apiView)
                     }
+                Text("Picker")
+                    .onTapGesture {
+                        navigationController.to(route: .pickerView)
+                    }
                 Text("Invalid Route")
                     .onTapGesture {
                         navigationController.path.append(Route.invalidRoute)

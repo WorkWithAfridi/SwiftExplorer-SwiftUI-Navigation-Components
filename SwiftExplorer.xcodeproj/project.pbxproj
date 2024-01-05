@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4FD6F62B3D88D8004763CC /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FD6F52B3D88D8004763CC /* PhotoSelectorController.swift */; };
+		EF4FD6F82B3D892E004763CC /* PhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FD6F72B3D892E004763CC /* PhotoSelectorView.swift */; };
+		EF4FD6FA2B3D8D78004763CC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FD6F92B3D8D78004763CC /* PickerView.swift */; };
+		EF4FD6FC2B3D938E004763CC /* CameraPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FD6FB2B3D938E004763CC /* CameraPhotoPickerView.swift */; };
 		EF8068522B3BC27100F242DC /* SwiftExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068512B3BC27100F242DC /* SwiftExplorerApp.swift */; };
 		EF8068542B3BC27100F242DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068532B3BC27100F242DC /* ContentView.swift */; };
 		EF8068562B3BC27100F242DC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068552B3BC27100F242DC /* Item.swift */; };
@@ -33,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF4FD6F52B3D88D8004763CC /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
+		EF4FD6F72B3D892E004763CC /* PhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorView.swift; sourceTree = "<group>"; };
+		EF4FD6F92B3D8D78004763CC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		EF4FD6FB2B3D938E004763CC /* CameraPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPhotoPickerView.swift; sourceTree = "<group>"; };
 		EF80684E2B3BC27100F242DC /* SwiftExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8068512B3BC27100F242DC /* SwiftExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExplorerApp.swift; sourceTree = "<group>"; };
 		EF8068532B3BC27100F242DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +78,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF4FD6F22B3D88B7004763CC /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				EF4FD6F42B3D88C5004763CC /* Controllers */,
+				EF4FD6F32B3D88C0004763CC /* Views */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		EF4FD6F32B3D88C0004763CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF4FD6F72B3D892E004763CC /* PhotoSelectorView.swift */,
+				EF4FD6F92B3D8D78004763CC /* PickerView.swift */,
+				EF4FD6FB2B3D938E004763CC /* CameraPhotoPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF4FD6F42B3D88C5004763CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF4FD6F52B3D88D8004763CC /* PhotoSelectorController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		EF8068452B3BC27100F242DC = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +179,7 @@
 		EF8068652B3BC2C000F242DC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EF4FD6F22B3D88B7004763CC /* Picker */,
 				EF8068912B3BF22100F242DC /* ApiView */,
 				EF8068712B3BCD5C00F242DC /* Components */,
 				EF8068662B3BC2CA00F242DC /* NavigationExplorer */,
@@ -377,10 +413,14 @@
 				EF80688E2B3BE85D00F242DC /* DialogsView.swift in Sources */,
 				EF8068A12B3BFA7B00F242DC /* CoinModel.swift in Sources */,
 				EF8068702B3BC4EB00F242DC /* RouteManager.swift in Sources */,
+				EF4FD6FC2B3D938E004763CC /* CameraPhotoPickerView.swift in Sources */,
 				EF80689B2B3BF35500F242DC /* CoinController.swift in Sources */,
 				EF8068902B3BEF6700F242DC /* CustomAlertDialog.swift in Sources */,
+				EF4FD6F82B3D892E004763CC /* PhotoSelectorView.swift in Sources */,
 				EF8068752B3BCD7A00F242DC /* ComponentsView.swift in Sources */,
 				EF8068882B3BE83300F242DC /* CustomActionSheet.swift in Sources */,
+				EF4FD6FA2B3D8D78004763CC /* PickerView.swift in Sources */,
+				EF4FD6F62B3D88D8004763CC /* PhotoSelectorController.swift in Sources */,
 				EF8068562B3BC27100F242DC /* Item.swift in Sources */,
 				EF8068522B3BC27100F242DC /* SwiftExplorerApp.swift in Sources */,
 			);
@@ -519,6 +559,7 @@
 				DEVELOPMENT_TEAM = 922L4HAC7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs to capture image to show in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -548,6 +589,7 @@
 				DEVELOPMENT_TEAM = 922L4HAC7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs to capture image to show in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
