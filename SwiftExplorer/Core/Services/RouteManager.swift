@@ -27,6 +27,8 @@ enum Route{
     case cameraPhotoPicker
     case videoPicker
     case filePicker
+    case modifierListView
+    case measurementFormatter
 }
 
 struct GetView: View {
@@ -63,6 +65,10 @@ struct GetView: View {
             PhotoSelectorView()
         case .cameraPhotoPicker:
             CameraPhotoPickerView()
+        case .modifierListView:
+            ModifierListView()
+        case .measurementFormatter:
+            MeasurementFormatterView()
         default:
             ContentUnavailableView("404", systemImage: "globe", description: Text("Invalid route! :(").font(.footnote))
         }

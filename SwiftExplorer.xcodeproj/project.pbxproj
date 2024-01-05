@@ -11,6 +11,8 @@
 		EF4FD6F82B3D892E004763CC /* PhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FD6F72B3D892E004763CC /* PhotoSelectorView.swift */; };
 		EF4FD6FA2B3D8D78004763CC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FD6F92B3D8D78004763CC /* PickerView.swift */; };
 		EF4FD6FC2B3D938E004763CC /* CameraPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FD6FB2B3D938E004763CC /* CameraPhotoPickerView.swift */; };
+		EF7FA4B22B481A230028BE14 /* ModifierListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FA4B12B481A230028BE14 /* ModifierListView.swift */; };
+		EF7FA4B42B481AC60028BE14 /* MeasurementFormatterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FA4B32B481AC60028BE14 /* MeasurementFormatterView.swift */; };
 		EF8068522B3BC27100F242DC /* SwiftExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068512B3BC27100F242DC /* SwiftExplorerApp.swift */; };
 		EF8068542B3BC27100F242DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068532B3BC27100F242DC /* ContentView.swift */; };
 		EF8068562B3BC27100F242DC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8068552B3BC27100F242DC /* Item.swift */; };
@@ -41,6 +43,8 @@
 		EF4FD6F72B3D892E004763CC /* PhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorView.swift; sourceTree = "<group>"; };
 		EF4FD6F92B3D8D78004763CC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EF4FD6FB2B3D938E004763CC /* CameraPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPhotoPickerView.swift; sourceTree = "<group>"; };
+		EF7FA4B12B481A230028BE14 /* ModifierListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierListView.swift; sourceTree = "<group>"; };
+		EF7FA4B32B481AC60028BE14 /* MeasurementFormatterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementFormatterView.swift; sourceTree = "<group>"; };
 		EF80684E2B3BC27100F242DC /* SwiftExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8068512B3BC27100F242DC /* SwiftExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExplorerApp.swift; sourceTree = "<group>"; };
 		EF8068532B3BC27100F242DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +107,23 @@
 				EF4FD6F52B3D88D8004763CC /* PhotoSelectorController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF7FA4AF2B4819FA0028BE14 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				EF7FA4B02B481A0D0028BE14 /* Views */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		EF7FA4B02B481A0D0028BE14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF7FA4B12B481A230028BE14 /* ModifierListView.swift */,
+				EF7FA4B32B481AC60028BE14 /* MeasurementFormatterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EF8068452B3BC27100F242DC = {
@@ -179,6 +200,7 @@
 		EF8068652B3BC2C000F242DC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EF7FA4AF2B4819FA0028BE14 /* Modifiers */,
 				EF4FD6F22B3D88B7004763CC /* Picker */,
 				EF8068912B3BF22100F242DC /* ApiView */,
 				EF8068712B3BCD5C00F242DC /* Components */,
@@ -398,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7FA4B42B481AC60028BE14 /* MeasurementFormatterView.swift in Sources */,
 				EF80689D2B3BF3B100F242DC /* CoinListView.swift in Sources */,
 				EF80686B2B3BC2F200F242DC /* NavigationHome.swift in Sources */,
 				EF8068822B3BD54B00F242DC /* BaseSheetView.swift in Sources */,
@@ -410,6 +433,7 @@
 				EF80687A2B3BCF8100F242DC /* PopToRootButton.swift in Sources */,
 				EF80687C2B3BD36B00F242DC /* PopUpMenuView.swift in Sources */,
 				EF80686D2B3BC37600F242DC /* NavigationController.swift in Sources */,
+				EF7FA4B22B481A230028BE14 /* ModifierListView.swift in Sources */,
 				EF80688E2B3BE85D00F242DC /* DialogsView.swift in Sources */,
 				EF8068A12B3BFA7B00F242DC /* CoinModel.swift in Sources */,
 				EF8068702B3BC4EB00F242DC /* RouteManager.swift in Sources */,
